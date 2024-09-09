@@ -618,6 +618,16 @@ require('lazy').setup({
         -- tsserver = {},
         --
 
+        rust_analyzer = {
+          settings = {
+            ['rust-analyzer'] = {
+              checkOnSave = {
+                allTargets = false,
+              },
+            },
+          },
+        },
+
         lua_ls = {
           -- cmd = {...},
           -- filetypes = { ...},
